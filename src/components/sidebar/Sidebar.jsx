@@ -12,7 +12,7 @@ import {
   ChatBubbleOutline,
   WorkOutline,
   Report,
-} from '@mui/icons-material';;
+} from '@mui/icons-material';
 
 export default function Sidebar() {
   return (
@@ -40,19 +40,19 @@ export default function Sidebar() {
           <ul className="sidebarList">
               <li className="sidebarListItem">
                 <PermIdentity className="sidebarIcon" />
-                Users
+                <a className="link" href={`/users`}>Users</a>
               </li>
               <li className="sidebarListItem">
                 <Storefront className="sidebarIcon" />
-                Products
+                <a className="link" href={`/products`}>Products</a>
               </li>
             <li className="sidebarListItem">
               <AttachMoney className="sidebarIcon" />
-              Transactions
+              <a className="link" href={`/transactions`}>Transactions</a>
             </li>
             <li className="sidebarListItem">
               <BarChart className="sidebarIcon" />
-              Reports
+              <a className="link" href={`/reports`}>Reports</a>
             </li>
           </ul>
         </div>
