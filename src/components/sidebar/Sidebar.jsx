@@ -23,7 +23,7 @@ export default function Sidebar() {
           <ul className="sidebarList">
             <li className="sidebarListItem active">
               <LineStyle className="sidebarIcon" />
-              Home
+              <a className="link" href={`/`}>Home</a>
             </li>
             <li className="sidebarListItem">
               <Timeline className="sidebarIcon" />
