@@ -4,6 +4,7 @@ import "./app.css"
 import Home from "./pages/home/Home";
 import { createBrowserRouter, createRoutesFromElements, Route, Outlet, RouterProvider} from 'react-router-dom'
 import UserList from "./pages/userList/UserList";
+import User from "./pages/user/User";
 
 
 function App() {
@@ -13,8 +14,8 @@ function App() {
       <Route path="/" element={<Root />}>
         <Route index element={<Home />} />
         <Route path="/users" element={<UserList />} />
-        {/* <Route path="/post/:id" element={<Single />} />
-        <Route path="/login" element={user ? <Home /> : <Login />} />
+        <Route path="/user/:userId" element={<User />} />
+        {/* <Route path="/login" element={user ? <Home /> : <Login />} />
         <Route path="/settings" element={user ? <Settings/> : <Login />} />
         <Route path="/register" element={user ? <Home/> : <Register />} /> */}
       </Route>
@@ -37,9 +38,7 @@ const Root = () => {
 
   return (
     <> 
-      <div>
         <Outlet />
-      </div>
     </>
   )
 }
